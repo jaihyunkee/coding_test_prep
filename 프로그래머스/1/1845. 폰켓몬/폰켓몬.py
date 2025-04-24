@@ -1,6 +1,2 @@
 def solution(nums):
-    temp = set(nums)
-    tlen = len(temp)
-    half = len(nums) // 2
-    
-    return min(half, tlen)
+    return min(len(nums) // 2, len(set(nums)))
